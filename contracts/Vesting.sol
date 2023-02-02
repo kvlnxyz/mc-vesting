@@ -12,7 +12,7 @@ contract Vesting {
     address public owner;
     mapping(address => uint256) public balanceOf;
     mapping(address => uint256) public unlockOf;
-    uint256 blacklistCount;
+    uint256 public blacklistCount;
     mapping(uint256 => address) public blacklisted;
 
 
