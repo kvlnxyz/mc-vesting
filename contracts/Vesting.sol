@@ -65,8 +65,8 @@ contract Vesting {
     }
 
     function blacklist(address _user) external onlyOwner {
-        blacklistCount += 1;
         blacklisted[blacklistCount] = _user;
+        blacklistCount += 1;
     }
 
     function claim() public {
